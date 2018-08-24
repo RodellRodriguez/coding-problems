@@ -9,7 +9,6 @@ relationship and there lies an opportunity for memoization to cache number of wa
 position of the grid that has already been calculated.
 """
 
-
 class Solution():
     def uniquePaths(self, m, n):
         """
