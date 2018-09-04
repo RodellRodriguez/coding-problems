@@ -1,5 +1,21 @@
 """
-Print the input file directory strings as a file tree structure.
+Given a list of strings such as :
+[
+	"/home/drugs/valium/",
+	"/home/routes/a/",
+	"/src/doctor/pediatrician/",
+]
+
+Print the input file directory strings as a file tree structure as below:
+
+- home
+	- drugs
+		- valium
+	- routes
+		- a
+- src
+	- doctor
+		- pediatrician
 
 """
 
