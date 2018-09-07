@@ -23,7 +23,7 @@ Solution 2:
     3. If the length of the result of step 2 is larger than max_palindrome then set
     max_palindrome to the string from step 2
     4. Repeat step 2 and 3 but for step 2 you handle the case for if input s has an
-    even number of letters
+    even number of letters (even case)
 
 The above solution is better because for every index (linear) you do the middle
 expansion to check for palindrome (linear) therefore the time complexity for the 
@@ -73,9 +73,9 @@ class Solution:
                 max_palindrome = tmp
         return max_palindrome
     
-    # Middle expansion. The variables l and r act as if they start
+    # Check if palindrome via Middle expansion. Variables l and r act as if they start
     # in the middle of the palindrome and expand left and right
-    # respectively to and check equality in order to detect if palindrome
+    # respectively to check equality in order to detect if palindrome
     def helper(self, s, l, r):
         while l >= 0 and r < len(s) and s[l] == s[r]:
             l -= 1; r += 1
