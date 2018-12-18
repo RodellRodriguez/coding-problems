@@ -11,6 +11,8 @@ appended to the solution set, otherwise return from the call stack.
 You have to cycle through all of the numbers in the array and repeat this process to account
 for all possible combinations. Therefore you need a for loop as the controller to go through
 each index but at each iteration requires a recursive call in order to give a new scope
+
+In addition, the list of cadidates should be sorted so that we know that if we ever
 """
 
 class Solution:
@@ -23,7 +25,6 @@ class Solution:
 
         res = []
         if candidates:
-            candidates.sort()
             self.dfs(candidates, target, 0, [], res)
         return res
     
