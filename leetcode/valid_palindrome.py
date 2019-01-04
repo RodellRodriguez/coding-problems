@@ -1,4 +1,8 @@
-"""
+""" https://leetcode.com/problems/valid-palindrome/
+
+Create a new string of lower case version of original string
+Create an empty string and add to it only the alphanumeric characters of the lower case string
+Reverse this string and compare if they are the same
 
 """
 
